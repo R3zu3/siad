@@ -112,24 +112,24 @@ $lastitem = 0;
 					if($act_pag == 1){ ?>
 						<!-- SI LA PAGINA ACTUAL ES LA PRIMERA -->
 						<li class="disabled hide-on-small-only" title="primera página" id="fpp">
-							<a href="#!">
+							<a href="javascript:void(0);">
 								<i class="material-icons">first_page</i>
 							</a>
 						</li>
 						<li class="disabled" title="página anterior">
-							<a href="#!">
+							<a href="javascript:void(0);">
 								<i class="material-icons">chevron_left</i>
 							</a>
 						</li>
 					<?php } else { ?>
 						<!-- SI LA PAGINA ACTUAL NO ES LA PRIMERA -->
 						<li class="waves-effect hide-on-small-only" title="primera página" id="fpp" onclick="filtrar_pagina(1);">
-							<a href="#!">
+							<a href="javascript:void(0);">
 								<i class="material-icons">first_page</i>
 							</a>
 						</li>
 						<li class="waves-effect" title="página anterior" onclick="filtrar_pagina(<?php echo $act_pag-1; ?>);">
-							<a href="#!">
+							<a href="javascript:void(0);">
 								<i class="material-icons">chevron_left</i>
 							</a>
 						</li>
@@ -139,12 +139,12 @@ $lastitem = 0;
 				<?php if (($i + 1) == $act_pag) { ?>
 					<!-- ESTA ES LA PAGINA ACTUAL -->
 					<li class="active pagin">
-						<a href="#!" onclick="filtrar_pagina(<?php echo $i+1; ?>);" ><?php echo $i+1; ?></a>
+						<a href="javascript:void(0);" onclick="filtrar_pagina(<?php echo $i+1; ?>);" ><?php echo $i+1; ?></a>
 					</li>
 				<?php } else { ?>
 					<!-- LAS DEMAS PAGINAS -->
 					<li class="waves-effect pagin">
-						<a href="#!" onclick="filtrar_pagina(<?php echo $i+1; ?>);" ><?php echo $i+1; ?></a>
+						<a href="javascript:void(0);" onclick="filtrar_pagina(<?php echo $i+1; ?>);" ><?php echo $i+1; ?></a>
 					</li>
 				<?php } ?>
 
@@ -152,24 +152,24 @@ $lastitem = 0;
 				<?php if($act_pag == $num_paginas){ if(($i+1) == $num_paginas){?>
 					<!-- SI LA PAGINA ACTUAL ES LA ULTIMA -->
 					<li class="disabled" title="página siguiente">
-						<a href="#!">
+						<a href="javascript:void(0);">
 							<i class="material-icons">chevron_right</i>
 						</a>
 					</li>
 					<li class="disabled hide-on-small-only" title="última página" id="lpp">
-						<a href="#!">
+						<a href="javascript:void(0);">
 							<i class="material-icons">last_page</i>
 						</a>
 					</li>
 				<?php } } else { if(($i+1) == $num_paginas){?>
 					<!-- SI LA PAGINA ACTUAL NO ES LA ULTIMA -->
 					<li class="waves-effect" title="página siguiente">
-						<a href="#!" onclick="filtrar_pagina(<?php echo $act_pag+1; ?>);">
+						<a href="javascript:void(0);" onclick="filtrar_pagina(<?php echo $act_pag+1; ?>);">
 							<i class="material-icons">chevron_right</i>
 						</a>
 					</li>
 					<li class="waves-effect hide-on-small-only" title="última página" id="lpp">
-						<a href="#!" onclick="filtrar_pagina(<?php echo $num_paginas ?>);">
+						<a href="javascript:void(0);" onclick="filtrar_pagina(<?php echo $num_paginas ?>);">
 							<i class="material-icons">last_page</i>
 						</a>
 					</li>
@@ -218,7 +218,7 @@ $lastitem = 0;
 					i++;
 				})
 
-				items[2].after('<li class="disabled" title="Mas Paginas"><a href="#!">...</a></li>');
+				items[2].after('<li class="disabled" title="Mas Paginas"><a href="javascript:void(0);">...</a></li>');
 
 			} else {
 				if (actp >= (totp - 4)) {
@@ -239,7 +239,7 @@ $lastitem = 0;
 
 						if ((i + 1) == (actp + 1)) {
 							items[i].show();
-							items[actp + 1].after('<li class="disabled" title="Mas Paginas"><a href="#!">...</a></li>');
+							items[actp + 1].after('<li class="disabled" title="Mas Paginas"><a href="javascript:void(0);">...</a></li>');
 						}
 
 						items[totp-1].show();

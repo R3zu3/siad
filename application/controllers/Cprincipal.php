@@ -11,7 +11,7 @@ class Cprincipal extends CI_Controller {
 	}
 
 	public function index(){
-		redirect('Siad');
+		redirect('inicio');
 	}
 
 	////METODOS SOMOS
@@ -139,16 +139,18 @@ class Cprincipal extends CI_Controller {
         	$vcategoria			= addslashes($this->input->post('vcategoria'));
         	$vdenuncia			= addslashes($this->input->post('vdenuncia'));
 
+        	////Falta la validación del recaptcha
+
         	if (preg_match_all('/[^0-9]/', $vsede) > 0) {
-        		redirect('Siad/Denunciar');
+        		redirect('denunciar');
         	}
 
         	if (preg_match_all('/[^0-9]/', $vcarrera) > 0) {
-        		redirect('Siad/Denunciar');
+        		redirect('denunciar');
         	}
 
         	if (preg_match_all('/[^0-9]/', $vcategoria) > 0) {
-        		redirect('Siad/Denunciar');
+        		redirect('denunciar');
         	}
 
         	date_default_timezone_set('America/Caracas'); 	//Caracas Uso Horario
@@ -185,7 +187,7 @@ class Cprincipal extends CI_Controller {
         		$vcategoria = $key->categoria;
         	}
 
-        	redirect('Siad?ok=true&id='.$vid.'&asunto='.$vasunto.'&sede='.$vsede.'&carrera='.$vcarrera.'&categoria='.$vcategoria.'&denuncia='.$vdenuncia.'&ticket='.$ticket.'&fecha='.$date);
+        	redirect('inicio?ok=true&id='.$vid.'&asunto='.$vasunto.'&sede='.$vsede.'&carrera='.$vcarrera.'&categoria='.$vcategoria.'&denuncia='.$vdenuncia.'&ticket='.$ticket.'&fecha='.$date);
 		}
 
 		$data['carreras'] = $this->Msiad->sp_consultar_tbl_carreras();
@@ -250,7 +252,8 @@ class Cprincipal extends CI_Controller {
 		$id 			= addslashes($this->input->post('vid'));
 		$ne				= addslashes($this->input->post('ne'));
 		$np 			= addslashes($this->input->post('numpag'));
-/* FALTA VALIDAR DE FORMA CORECTA
+
+		/* FALTA VALIDAR DE FORMA CORECTA
 		if ((preg_match_all('/[^-0-9]/', $sede) > 0) && ($yes == true)) {
         	$yes = false;
         }
@@ -266,7 +269,8 @@ class Cprincipal extends CI_Controller {
         if ((preg_match_all('/[^-0-9]/', $id) > 0) && ($yes == true)) {
         	$yes = false;
         }
-*/
+		*/
+
         $data['datos'] = null;
 
         if ($yes == true) {

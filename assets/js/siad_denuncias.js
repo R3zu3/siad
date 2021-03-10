@@ -21,7 +21,7 @@ $('#stbtn').click(function(){
 
 	M.toast({html: '¡Buscando denuncia!'});
 
-	$.post(base+"Siad/Denuncia/0000000000", {
+	$.post(base+"denuncia/0000000000", {
 		"vticket": ticket
 	}, function(data){
 		if(data){
@@ -39,7 +39,7 @@ $('#stbtn').click(function(){
 
 					if (counter == 2) {
 						clearInterval(interval);
-						window.location.href = base+"Siad/Denuncia/"+ticket;
+						window.location.href = base+"denuncia/"+ticket;
 					}
 
 				}, 1000);
@@ -74,7 +74,7 @@ function filtrar_pagina(pagina){
 
 	xhr.abort();
 
-	xhr = $.post(base+"Siad/Filtros", {
+	xhr = $.post(base+"filtros", {
 		'vsede'			: se,
 		'vcategoria' 	: ct,
 		'vcarrera' 		: ca,

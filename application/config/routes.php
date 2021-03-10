@@ -55,17 +55,17 @@ $route['translate_uri_dashes'] = FALSE;
 
 ////RUTAS SIAD ADM
 
-$route['ADM/Login'] = 'Cprincipal/login';
-$route['ADM/Iniciar'] = 'Cprincipal/iniciar_ses';
-$route['ADM/Dashboard'] = 'Cprincipal/dashboard';
+$route['ADM/Login'] 		= 'Cprincipal/login';
+$route['ADM/Iniciar'] 		= 'Cprincipal/iniciar_ses';
+$route['ADM/Dashboard'] 	= 'Cprincipal/dashboard';
 
-$route['Inicio'] = 'Cprincipal/somos_inicio';
+$route['home'] 				= 'Cprincipal/somos_inicio';
 
 ////RUTAS SIAD
 
-$route['Siad'] = 'Cprincipal/siad';
-$route['Siad/Denunciar'] = 'Cprincipal/denunciar';
-$route['Siad/Denuncias'] = 'Cprincipal/denuncias';
-$route['Siad/Denuncia/(:any)'] = 'Cprincipal/denuncia/$denuncia';
-$route['Siad/Cookies'] = 'Cprincipal/approvcookies';
-$route['Siad/Filtros'] = 'Cprincipal/filtros';
+$route['inicio'] 			= 'Cprincipal/siad';
+$route['denunciar'] 		= 'Cprincipal/denunciar';
+$route['denuncias'] 		= 'Cprincipal/denuncias';
+$route['denuncia/(:any)'] 	= 'Cprincipal/denuncia/$denuncia';
+$route['cookies'] 			= 'Cprincipal/approvcookies';
+$route['filtros'] 			= 'Cprincipal/filtros';

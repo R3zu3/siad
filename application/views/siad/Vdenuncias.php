@@ -177,7 +177,7 @@ if ($numden) {
 		<nav>
 			<div class="container" style="width: 90%;">
 				<div class="nav-wrapper">
-					<a style="height: 103px; overflow: hidden;" href="<?php echo base_url();?>Siad" class="brand-logo" onclick="$('#spinner').css({'opacity':'1','visibility':'visible'}); $('body').css('overflow','hidden');">
+					<a style="height: 103px; overflow: hidden;" href="<?php echo base_url();?>inicio" class="brand-logo" onclick="$('#spinner').css({'opacity':'1','visibility':'visible'}); $('body').css('overflow','hidden');">
 						<table>
 							<tr style="border: none;">
 								<td style="padding: 0;">
@@ -189,7 +189,7 @@ if ($numden) {
 
 					<ul class="right hide-on-med-and-down">
 						<li style="width: 500px;;">
-							<a class="dropdown-trigger" href="#!" data-target="dropdesc" style="text-align: center; color: #383838; font-weight: bold;">
+							<a class="dropdown-trigger" href="javascript:void(0);" data-target="dropdesc" style="text-align: center; color: #383838; font-weight: bold;">
 								Acerca de SIAD
 							</a>
 						</li>
@@ -209,14 +209,14 @@ if ($numden) {
 
 							<h6 style="font-weight: bold;">Desarrollado por:</h6>
 
-							<a href="http://zueprojects.tk" class="tooltipped" data-position="bottom" data-tooltip="Visitar Website" style="display: inline-block; padding: 0; width: fit-content; border-radius: 100px;">
+							<a href="https://zueprojects.dev" class="tooltipped" data-position="bottom" data-tooltip="Visitar Website" style="display: inline-block; padding: 0; width: fit-content; border-radius: 100px;">
 								<div class="chip programmer" style="margin: 0; color: white;">
 									<img src="<?php echo base_url();?>assets/media/persons/rz.jpg" alt="Person">
 									Renzo Zue
 								</div>
 							</a>
 
-							<a href="http://zueprojects.tk" class="tooltipped" data-position="bottom" data-tooltip="Visitar Website" style="display: inline-block; padding: 0; width: fit-content; border-radius: 100px;">
+							<a href="https://zueprojects.dev" class="tooltipped" data-position="bottom" data-tooltip="Visitar Website" style="display: inline-block; padding: 0; width: fit-content; border-radius: 100px;">
 								<div class="chip programmer" style="margin: 0; color: white;">
 									<img src="<?php echo base_url();?>assets/media/persons/jg.jpg" alt="Person">
 									Jhonner Gonzalez
@@ -283,15 +283,15 @@ if ($numden) {
 					<nav style="background: transparent; box-shadow: none;">
 						<div class="nav-wrapper">
 							<div class="col s12">
-								<a href="<?php echo base_url();?>Siad" class="breadcrumb" style="font-weight: bold; color: #1e1e1e;" onclick="$('#spinner').css({'opacity':'1','visibility':'visible'}); $('body').css('overflow','hidden');">SIAD</a>
-								<a href="<?php echo base_url();?>Siad/Denuncias" class="breadcrumb" style="font-weight: bold; color: #1e1e1e;" onclick="$('#spinner').css({'opacity':'1','visibility':'visible'}); $('body').css('overflow','hidden');">Denuncias</a>
+								<a href="<?php echo base_url();?>inicio" class="breadcrumb" style="font-weight: bold; color: #1e1e1e;" onclick="$('#spinner').css({'opacity':'1','visibility':'visible'}); $('body').css('overflow','hidden');">SIAD</a>
+								<a href="<?php echo base_url();?>denuncias" class="breadcrumb" style="font-weight: bold; color: #1e1e1e;" onclick="$('#spinner').css({'opacity':'1','visibility':'visible'}); $('body').css('overflow','hidden');">Denuncias</a>
 							</div>
 						</div>
 					</nav>
 
 					<div class="row">
 						<div class="col s12">
-							<a href="<?php echo base_url();?>Siad" class="pbtn waves-effect waves-light btn-large" onclick="$('#spinner').css({'opacity':'1','visibility':'visible'}); $('body').css('overflow','hidden');">
+							<a href="<?php echo base_url();?>inicio" class="pbtn waves-effect waves-light btn-large" onclick="$('#spinner').css({'opacity':'1','visibility':'visible'}); $('body').css('overflow','hidden');">
 								<table>
 									<tr style="border: none;">
 										<td style="padding: 0; text-align: center;">
@@ -520,37 +520,37 @@ if ($numden) {
 					<div class="col s12" style="text-align: center;">
 						<ul class="pagination" style="margin: auto;display: inline;">
 							<li class="disabled" title="primera página" onclick="filtrar_pagina(1);">
-								<a href="#!">
+								<a href="javascript:void(0);">
 									<i class="material-icons">first_page</i>
 								</a>
 							</li>
 							<li class="disabled" title="página anterior">
-								<a href="#!">
+								<a href="javascript:void(0);">
 									<i class="material-icons">chevron_left</i>
 								</a>
 							</li>
 							<li class="active">
-								<a href="#!" onclick="filtrar_pagina(1);" >1</a>
+								<a href="javascript:void(0);" onclick="filtrar_pagina(1);" >1</a>
 							</li>
 							<li class="waves-effect">
-								<a href="#!" onclick="filtrar_pagina(2);" >2</a>
+								<a href="javascript:void(0);" onclick="filtrar_pagina(2);" >2</a>
 							</li>
 							<li class="waves-effect">
-								<a href="#!" onclick="filtrar_pagina(3);" >3</a>
+								<a href="javascript:void(0);" onclick="filtrar_pagina(3);" >3</a>
 							</li>
 							<li class="waves-effect">
-								<a href="#!" onclick="filtrar_pagina(4);" >4</a>
+								<a href="javascript:void(0);" onclick="filtrar_pagina(4);" >4</a>
 							</li>
 							<li class="waves-effect">
-								<a href="#!" onclick="filtrar_pagina(5);" >5</a>
+								<a href="javascript:void(0);" onclick="filtrar_pagina(5);" >5</a>
 							</li>
 							<li class="waves-effect" title="página siguiente">
-								<a href="#!">
+								<a href="javascript:void(0);">
 									<i class="material-icons">chevron_right</i>
 								</a>
 							</li>
 							<li class="waves-effect" title="última página">
-								<a href="#!">
+								<a href="javascript:void(0);">
 									<i class="material-icons">last_page</i>
 								</a>
 							</li>
@@ -565,7 +565,7 @@ if ($numden) {
 			<div class="footer-copyright">
 				<div class="container">
 					Somos Humboldt © 2019
-					<a class="grey-text text-lighten-4 right" href="#!">Redes Sociales</a>
+					<a class="grey-text text-lighten-4 right" href="javascript:void(0);">Redes Sociales</a>
 				</div>
 			</div>
 		</footer>
@@ -583,7 +583,7 @@ if ($numden) {
 					</div>
 				</div>
 				<div class="modal-footer">
-					<a id="mcookie" href="#!" class="modal-close waves-effect waves-green btn-flat">OK!</a>
+					<a id="mcookie" href="javascript:void(0);" class="modal-close waves-effect waves-green btn-flat">OK!</a>
 				</div>
 			</div>
 		<?php } ?>

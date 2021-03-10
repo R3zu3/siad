@@ -1,6 +1,6 @@
 var onloadCallback = function() {
 	grecaptcha.render('html_element', {
-		'sitekey' : '6LdvN6YUAAAAAMZEGgdYG-_MbEs4Om8qblmqf8KN',
+		'sitekey' : '6LfztmYaAAAAAKjIIs0BggjP-uuUjF9TErD7eCmS',
 		'theme' : 'light',
 		'callback' : trueCAPTCHA,
 		'expired-callback' : expiredCAPTCHA,

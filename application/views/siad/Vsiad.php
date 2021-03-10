@@ -158,7 +158,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<nav>
 			<div class="container" style="width: 90%;">
 				<div class="nav-wrapper">
-					<a style="height: 103px; overflow: hidden; display: none;" href="<?php echo base_url();?>Siad" class="brand-logo show-on-medium-and-down" onclick="$('#spinner').css({'opacity':'1','visibility':'visible'}); $('body').css('overflow','hidden');">
+
+					<a style="height: 103px; overflow: hidden;" href="<?php echo base_url();?>inicio" class="brand-logo show-on-medium-and-down" onclick="$('#spinner').css({'opacity':'1','visibility':'visible'}); $('body').css('overflow','hidden');">
 						<table>
 							<tr style="border: none;">
 								<td style="padding: 0;">
@@ -168,19 +169,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</table>
 					</a>
 
-					<a style="height: 103px; overflow: hidden;" href="<?php echo base_url();?>Inicio" class="brand-logo hide-on-med-and-down" onclick="$('#spinner').css({'opacity':'1','visibility':'visible'}); $('body').css('overflow','hidden');">
-						<table>
-							<tr style="border: none;">
-								<td style="padding: 0;">
-									<img style="max-width: 100vw; max-height: 103px;" src="<?php echo base_url();?>assets/media/main/logo_somos.png">
-								</td>
-							</tr>
-						</table>
-					</a>
-
 					<ul class="right hide-on-med-and-down">
 						<li style="width: 500px;;">
-							<a class="dropdown-trigger" href="#!" data-target="dropdesc" style="text-align: center; color: #383838; font-weight: bold;">
+							<a class="dropdown-trigger" href="javascript:void(0);" data-target="dropdesc" style="text-align: center; color: #383838; font-weight: bold;">
 								Acerca de SIAD
 							</a>
 						</li>
@@ -200,14 +191,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 							<h6 style="font-weight: bold;">Desarrollado por:</h6>
 
-							<a href="http://zueprojects.tk" class="tooltipped" data-position="bottom" data-tooltip="Visitar Website" style="display: inline-block; padding: 0; width: fit-content; border-radius: 100px;">
+							<a href="https://zueprojects.dev" class="tooltipped" data-position="bottom" data-tooltip="Visitar Website" style="display: inline-block; padding: 0; width: fit-content; border-radius: 100px;">
 								<div class="chip programmer" style="margin: 0; color: white;">
 									<img src="<?php echo base_url();?>assets/media/persons/rz.jpg" alt="Person">
 									Renzo Zue
 								</div>
 							</a>
 
-							<a href="http://zueprojects.tk" class="tooltipped" data-position="bottom" data-tooltip="Visitar Website" style="display: inline-block; padding: 0; width: fit-content; border-radius: 100px;">
+							<a href="https://zueprojects.dev" class="tooltipped" data-position="bottom" data-tooltip="Visitar Website" style="display: inline-block; padding: 0; width: fit-content; border-radius: 100px;">
 								<div class="chip programmer" style="margin: 0; color: white;">
 									<img src="<?php echo base_url();?>assets/media/persons/jg.jpg" alt="Person">
 									Jhonner Gonzalez
@@ -287,7 +278,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<td>
 						<div class="col s12 m12 l6 center" > 
 							<div class="row">
-								<a href="<?php echo base_url();?>Siad/Denunciar" class="pbtn waves-effect waves-light btn-large" onclick="$('#spinner').css({'opacity':'1','visibility':'visible'}); $('body').css('overflow','hidden');">
+								<a href="<?php echo base_url();?>denunciar" class="pbtn waves-effect waves-light btn-large" onclick="$('#spinner').css({'opacity':'1','visibility':'visible'}); $('body').css('overflow','hidden');">
 									<table>
 										<tr style="border: none;">
 											<td style="padding: 0; text-align: center;">
@@ -300,7 +291,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</div>
 						<div class="col s12 m12 l6 center">
 							<div class="row">
-								<a href="<?php echo base_url();?>Siad/Denuncias" class="pbtn waves-effect waves-light btn-large" onclick="$('#spinner').css({'opacity':'1','visibility':'visible'}); $('body').css('overflow','hidden');">
+								<a href="<?php echo base_url();?>denuncias" class="pbtn waves-effect waves-light btn-large" onclick="$('#spinner').css({'opacity':'1','visibility':'visible'}); $('body').css('overflow','hidden');">
 									<table>
 										<tr style="border: none;">
 											<td style="padding: 0; text-align: center;">
@@ -321,7 +312,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<div class="footer-copyright">
 			<div class="container">
 				Somos Humboldt © 2019
-				<a class="grey-text text-lighten-4 right" href="#!">Redes Sociales</a>
+				<a class="grey-text text-lighten-4 right" href="javascript:void(0);">Redes Sociales</a>
 			</div>
 		</div>
 	</footer>
@@ -406,7 +397,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</div>
 		</div>
 		<div class="modal-footer">
-			<a id="msend" href="#!" class="modal-close waves-effect waves-green btn-flat" onclick="$('#spinner').css({'opacity':'1','visibility':'visible'}); $('body').css('overflow','hidden');">DE ACUERDO!</a>
+			<a id="msend" href="javascript:void(0);" class="modal-close waves-effect waves-green btn-flat" onclick="$('#spinner').css({'opacity':'1','visibility':'visible'}); $('body').css('overflow','hidden');">DE ACUERDO!</a>
 		</div>
 	</div>
 
@@ -425,7 +416,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</div>
 		</div>
 		<div class="modal-footer">
-			<a id="mcookie" href="#!" class="modal-close waves-effect waves-green btn-flat" onclick="$('#spinner').css({'opacity':'1','visibility':'visible'}); $('body').css('overflow','hidden');">OK!</a>
+			<a id="mcookie" href="javascript:void(0);" class="modal-close waves-effect waves-green btn-flat" onclick="$('#spinner').css({'opacity':'1','visibility':'visible'}); $('body').css('overflow','hidden');">OK!</a>
 		</div>
 	</div>
 	<?php } ?>

@@ -3,7 +3,7 @@ $(document).ready(function(){
 	modalcookie.open();
 
 	$('#mcookie').click(function(){
-		$.post(base+"Siad/Cookies", {}, function(data){
+		$.post(base+"cookies", {}, function(data){
 			location.reload(true);
 		});
 	});
